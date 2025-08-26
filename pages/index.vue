@@ -184,17 +184,17 @@ const increment = () => {
 }
 
 .license-plate {
-  background: linear-gradient(145deg, #ffffff 0%, #f0f0f0 100%);
-  border: 8px solid #2c3e50;
+  background: linear-gradient(145deg, #ecf0f1 0%, #bdc3c7 100%);
+  border: 8px solid #34495e;
   border-radius: 15px;
   padding: 20px 30px;
   width: 400px;
   text-align: center;
   position: relative;
   box-shadow:
-    inset 0 2px 10px rgba(255, 255, 255, 0.8),
+    inset 0 2px 10px rgba(255, 255, 255, 0.9),
     inset 0 -2px 10px rgba(0, 0, 0, 0.1),
-    0 10px 30px rgba(0, 0, 0, 0.3);
+    0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .license-plate::before {
@@ -220,7 +220,7 @@ const increment = () => {
 }
 
 .country {
-  background: #e74c3c;
+  background: #e67e22;
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
@@ -269,7 +269,7 @@ const increment = () => {
 }
 
 .increment-btn {
-  background: linear-gradient(145deg, #3498db, #2980b9);
+  background: linear-gradient(145deg, #27ae60, #229954);
   border: none;
   border-radius: 50px;
   padding: 15px 40px;
@@ -281,13 +281,13 @@ const increment = () => {
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 8px 25px rgba(39, 174, 96, 0.3);
 }
 
 .increment-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(52, 152, 219, 0.4);
-  background: linear-gradient(145deg, #5dade2, #3498db);
+  box-shadow: 0 12px 35px rgba(39, 174, 96, 0.4);
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
 }
 
 .increment-btn:active {
@@ -325,7 +325,7 @@ const increment = () => {
 }
 
 .highlight {
-  color: #f39c12;
+  color: #e67e22;
   font-weight: bold;
   font-family: 'Courier New', monospace;
   font-size: 1.2rem;
