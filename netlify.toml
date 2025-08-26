@@ -1,0 +1,19 @@
+# Netlify configuration for Nuxt.js static site
+[build]
+  command = "npm run generate"
+  publish = ".output/public"
+  
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"]}
+
+# Handle SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/200.html"
+  status = 200
