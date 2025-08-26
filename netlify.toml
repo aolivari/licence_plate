@@ -4,8 +4,7 @@
   publish = ".output/public"
   
 [build.environment]
-  NODE_VERSION = "18.20.8"
-  NPM_VERSION = "10"
+  NODE_VERSION = "20.14.0"
 
 # Handle SPA routing
 [[redirects]]
