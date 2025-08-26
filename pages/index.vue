@@ -30,6 +30,8 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
 // Reactive state to store the complete pattern as string
 const pattern = ref('000000');
 
