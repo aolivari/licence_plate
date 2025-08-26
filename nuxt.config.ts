@@ -6,6 +6,17 @@ export default defineNuxtConfig({
   // Explicitly enable pages
   pages: true,
 
+  // GitHub Pages configuration
+  nitro: {
+    prerender: {
+      routes: ['/'],
+    },
+  },
+
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/licence_plate/' : '/',
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
