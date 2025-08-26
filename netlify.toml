@@ -4,16 +4,11 @@
   publish = ".output/public"
   
 [build.environment]
-  NODE_VERSION = "18"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
+  NODE_VERSION = "18.20.8"
+  NPM_VERSION = "10"
 
 # Handle SPA routing
 [[redirects]]
   from = "/*"
-  to = "/200.html"
+  to = "/index.html"
   status = 200

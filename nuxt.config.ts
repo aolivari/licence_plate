@@ -3,25 +3,23 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  // Explicitly enable pages
-  pages: true,
-
-  // GitHub Pages configuration
+  // Enable static site generation
   nitro: {
     prerender: {
-      routes: ['/'],
-    },
+      routes: ['/']
+    }
   },
 
+  // Configuration for deployment
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/licence_plate/' : '/',
+    baseURL: '/'
   },
 
+  // Only essential modules for deployment
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/test-utils',
-    '@nuxt/scripts',
-    '@nuxt/content',
+    '@nuxt/eslint'
   ],
+
+  // Ensure proper static generation
+  ssr: true
 });
