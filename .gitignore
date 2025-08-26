@@ -1,0 +1,30 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# VS Code settings (optional - uncomment if you want to ignore)
+.vscode/
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Copilot instructions (development helper file)
+.github/copilot-instructions.md
