@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   // Enable static site generation
   nitro: {
+    preset: 'netlify-static',
     prerender: {
       routes: ['/']
     }
